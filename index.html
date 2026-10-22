@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Birthday, My Love ✨</title>
+  <meta name="description" content="A special birthday celebration page crafted with love.">
+  <meta name="theme-color" content="#FAF7F2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Aesthetic Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Canvas for Petals & Sparks -->
+  <canvas id="ambientCanvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Audio Player Pill -->
+  <div class="audio-pill" id="audioPill" title="Toggle gentle background melody">
+    <div class="sound-wave" id="soundWave">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <span class="music-label" id="musicLabel">Our Song</span>
+  </div>
+
+  <!-- Screen 1: The Wax Seal Envelope Entrance -->
+  <div class="envelope-gate" id="envelopeGate">
+    <div class="envelope-container" id="envelopeContainer">
+      <div class="envelope">
+        <div class="envelope-back"></div>
+        <div class="card-peek">
+          <span class="sparkle-symbol">✦</span>
+          <p class="peek-text">A special gift for you</p>
+        </div>
+        <div class="envelope-flap" id="envelopeFlap"></div>
+        <div class="envelope-front"></div>
+        <div class="wax-seal" id="waxSeal" role="button" tabindex="0" aria-label="Open the letter">
+          <div class="wax-inner">
+            <span class="wax-initial">♥</span>
+            <span class="wax-ring"></span>
+          </div>
+          <span class="seal-prompt">Tap to open</span>
+        </div>
+      </div>
+      <div class="gate-hint">Crafted with all my love • Tap the seal</div>
+    </div>
+  </div>
+
+  <!-- Main Website Experience -->
+  <main class="site-main" id="siteMain">
+
+    <!-- Hero Section: Editorial Cover -->
+    <header class="hero-section">
+      <div class="hero-badge">
+        <span class="badge-spark">✦</span>
+        <span class="badge-text" id="heroDateBadge">ANOTHER BEAUTIFUL YEAR</span>
+        <span class="badge-spark">✦</span>
+      </div>
+
+      <h1 class="hero-title">
+        Happy Birthday, <br>
+        <span class="hero-name" id="heroName">My Special One</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        "To the girl who turns simple moments into pure poetry, and fills every single day with her warmth and light."
+      </p>
+
+      <div class="hero-frame-wrapper">
+        <div class="hero-glow-back"></div>
+        <div class="hero-photo-card">
+          <div class="photo-container">
+            <img src="images/hero_rose.jpeg" alt="Portrait holding a rose" class="hero-image" loading="eager" id="heroImage">
+          </div>
+          <div class="photo-caption">
+            <span class="caption-date">Always Radiating Grace</span>
+            <span class="caption-heart">❦</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span class="scroll-label">Scroll to relive our memories</span>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </header>
+
+    <!-- Chapter 1: Polaroid Memory Reel -->
+    <section class="memories-section">
+      <div class="section-header">
+        <span class="section-tag">CHAPTER I</span>
+        <h2 class="section-title">The Moments I Cherish</h2>
+        <p class="section-description">Every picture has a memory, and every memory has my heart. Tap any photo to read what I felt.</p>
+      </div>
+
+      <div class="polaroid-grid" id="polaroidGrid">
+
+        <!-- Card 1 -->
+        <div class="polaroid-card" data-tilt="-2" tabindex="0">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="tape-sticker"></div>
+              <div class="polaroid-img-wrap">
+                <img src="images/nature_portrait.jpeg" alt="Sunny nature portrait" loading="lazy">
+              </div>
+              <div class="polaroid-label">
+                <p class="handwritten">Pure Sunshine & That Smile ☀️</p>
+                <span class="flip-hint">tap to flip</span>
+              </div>
+            </div>
+            <div class="polaroid-back">
+              <div class="note-paper">
+                <span class="note-stamp">CHAPTER 01</span>
+                <p class="note-body">
+                  "You have this quiet magic of bringing so much color into everywhere you stand. Never lose that bright, contagious giggle."
+                </p>
+                <span class="note-sign">— Forever yours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="polaroid-card" data-tilt="2.5" tabindex="0">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="tape-sticker"></div>
+              <div class="polaroid-img-wrap">
+                <img src="images/golden_meadow.jpeg" alt="Golden hour by the tree" loading="lazy">
+              </div>
+              <div class="polaroid-label">
+                <p class="handwritten">Peaceful & Free 🌾</p>
+                <span class="flip-hint">tap to flip</span>
+              </div>
+            </div>
+            <div class="polaroid-back">
+              <div class="note-paper">
+                <span class="note-stamp">CHAPTER 02</span>
+                <p class="note-body">
+                  "Standing here with you felt like the whole world hit pause. Just gentle wind, golden sunlight, and you looking effortlessly graceful."
+                </p>
+                <span class="note-sign">— My favorite peace</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="polaroid-card" data-tilt="-1.5" tabindex="0">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="tape-sticker"></div>
+              <div class="polaroid-img-wrap">
+                <img src="images/festive_saree.jpeg" alt="Festive lights and green saree" loading="lazy">
+              </div>
+              <div class="polaroid-label">
+                <p class="handwritten">Breathtaking Elegance 🕯️</p>
+                <span class="flip-hint">tap to flip</span>
+              </div>
+            </div>
+            <div class="polaroid-back">
+              <div class="note-paper">
+                <span class="note-stamp">CHAPTER 03</span>
+                <p class="note-body">
+                  "The lights in the background had no chance against how stunning you looked. When you dressed in green, you literally took my breath away."
+                </p>
+                <span class="note-sign">— Always enchanted</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="polaroid-card" data-tilt="3" tabindex="0">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="tape-sticker"></div>
+              <div class="polaroid-img-wrap">
+                <img src="images/cozy_selfie.jpeg" alt="Cozy smile selfie" loading="lazy">
+              </div>
+              <div class="polaroid-label">
+                <p class="handwritten">The Sweetest Selfie 💙</p>
+                <span class="flip-hint">tap to flip</span>
+              </div>
+            </div>
+            <div class="polaroid-back">
+              <div class="note-paper">
+                <span class="note-stamp">CHAPTER 04</span>
+                <p class="note-body">
+                  "My absolute favorite kind of day: casual, genuine, smiling behind those cute glasses. You make everyday moments feel extraordinary."
+                </p>
+                <span class="note-sign">— You make me smile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="polaroid-card" data-tilt="-2" tabindex="0">
+          <div class="polaroid-inner">
+            <div class="polaroid-front">
+              <div class="tape-sticker"></div>
+              <div class="polaroid-img-wrap">
+                <img src="images/blessed_ganesha.jpeg" alt="Festive prayer and blessing" loading="lazy">
+              </div>
+              <div class="polaroid-label">
+                <p class="handwritten">Blessings & Gratitude 🙏</p>
+                <span class="flip-hint">tap to flip</span>
+              </div>
+            </div>
+            <div class="polaroid-back">
+              <div class="note-paper">
+                <span class="note-stamp">CHAPTER 05</span>
+                <p class="note-body">
+                  "Praying that every blessing, boundless happiness, peace, and health find their way into your life this year and always."
+                </p>
+                <span class="note-sign">— Always in my prayers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Chapter 2: Interactive "Make a Wish" Virtual Candle -->
+    <section class="wish-section">
+      <div class="wish-card">
+        <span class="section-tag">CHAPTER II</span>
+        <h2 class="wish-title">Make a Birthday Wish</h2>
+        <p class="wish-instruction" id="wishInstruction">
+          Close your eyes, whisper your deepest wish in your heart, then tap the candle flame to blow it out.
+        </p>
+
+        <div class="candle-stage">
+          <div class="candle-wrapper" id="candleWrapper" role="button" tabindex="0" aria-label="Tap to blow out the candle">
+            <div class="flame-halo" id="flameHalo"></div>
+            <div class="flame-container" id="flameContainer">
+              <div class="flame-outer"></div>
+              <div class="flame-inner"></div>
+            </div>
+            <div class="wick"></div>
+            <div class="candle-body">
+              <div class="candle-wax-drip"></div>
+              <div class="candle-stripe"></div>
+            </div>
+            <div class="candle-base"></div>
+          </div>
+          <div class="smoke-particles" id="smokeParticles" aria-hidden="true"></div>
+        </div>
+
+        <div class="wish-revealed" id="wishRevealed">
+          <div class="revealed-icon">✨</div>
+          <h3 class="revealed-heading">Your Wish is Safe With the Stars</h3>
+          <p class="revealed-text">
+            May this year open every door of joy, laughter, success, and unending love for you. You deserve all the beauty in this universe.
+          </p>
+          <button class="relight-btn" id="relightBtn">Light the candle again 🕯️</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3: The Handwritten Birthday Letter -->
+    <section class="letter-section">
+      <div class="section-header">
+        <span class="section-tag">CHAPTER III</span>
+        <h2 class="section-title">A Letter From My Heart</h2>
+      </div>
+
+      <article class="parchment-letter">
+        <div class="letter-top-row">
+          <span class="vintage-date" id="letterDate">Today & Forever</span>
+          <div class="wax-motif">❦</div>
+        </div>
+
+        <div class="letter-salutation">My Dearest,</div>
+
+        <div class="letter-content" id="letterContent">
+          <p>
+            On this special day, I wanted to pause and remind you how profoundly meaningful you are to me.
+          </p>
+          <p>
+            You have this rare, delicate balance of strength and kindness. Your laughter is my favorite sound, your warmth is my favorite comfort, and the way your eyes light up when you smile is the most genuine thing I have ever seen.
+          </p>
+          <p>
+            Thank you for being my favorite person to talk to, my favorite person to laugh with, and the brightest part of all my days.
+          </p>
+          <p>
+            May this birthday surround you with as much warmth, peace, and delight as you bring to everyone lucky enough to know you. I promise to keep celebrating you—not just today, but every single day.
+          </p>
+        </div>
+
+        <div class="letter-signature">
+          <p class="sign-off">With all my love,</p>
+          <p class="signature-name" id="signatureName">Yours Always ♥</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer: Minimal Romantic Fin -->
+    <footer class="site-footer">
+      <div class="footer-heart">♥</div>
+      <p class="footer-note">Crafted exclusively for you on your special day.</p>
+      <p class="footer-sub">Stay happy, stay beautiful, stay you.</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
